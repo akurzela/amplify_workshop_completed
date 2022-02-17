@@ -1,4 +1,5 @@
 import React from 'react';
+import stylesheeet from './styles.module.css';
 import './App.css';
 import Amplify from 'aws-amplify';
 import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
@@ -21,9 +22,10 @@ const AuthStateApp = () => {
 
   return authState === AuthState.SignedIn && user ? (
     <div className="App">
-      <div style={{ width: "20px", marginLeft: "80%" }} ><AmplifySignOut /></div>
+      <div className={stylesheeet.buttonA} ><AmplifySignOut /></div>
       <div>Hello, {user.username}</div>
-      <div style={{ width: "80%", margin: "0 auto" }} ><BasicTable /></div>
+      <div className={stylesheeet.tableA} ><BasicTable /></div>
+      <button className={stylesheeet.blue}>This is blue</button>
     </div>
   ) : (
     <AmplifyAuthenticator />

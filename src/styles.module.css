@@ -1,0 +1,15 @@
+.buttonA {
+    width: 10px;
+    height: 30px;
+    margin-left: 90%;
+}
+  
+.tableA {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.blue {
+    background-color: red;
+}
