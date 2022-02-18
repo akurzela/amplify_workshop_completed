@@ -6,7 +6,6 @@ import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
 import awsconfig from './aws-exports';
 import BasicTable from './components/Table';
-import Posts from './components/test'
 
 Amplify.configure(awsconfig);
 
